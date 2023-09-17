@@ -1,0 +1,43 @@
+body{
+    background-color: rgba(97, 214, 214, 0.295);
+}
+
+
+table, td{
+    border: solid 1px black;
+}
+
+td{
+    width: 100px;
+}
+
+#primeira_tabela thead{
+    background-color: green;
+}
+
+
+.impar_1{
+    background-color: rgb(216, 211, 205);
+}
+
+.par_1{
+    background-color: rgb(173, 233, 173);
+}
+
+#segunda_tabela tr{
+    color: white;
+}
+
+
+#segunda_tabela thead{
+    background-color: gray;
+}
+
+
+.impar_2{
+    background-color: black;
+}
+
+.par_2{
+    background-color: rgb(107, 103, 103);
+}

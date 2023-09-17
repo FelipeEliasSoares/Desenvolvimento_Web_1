@@ -1,0 +1,157 @@
+.parte1{
+    background-color: rgb(110, 240, 110);
+    text-align: left; 
+}
+
+#Parte{
+    background-color: rgb(110, 240, 110);
+    text-align: center;
+    font-size: 25px;
+}
+
+#subtitulo{
+    background-color: rgb(110, 240, 110);
+    text-align: left;
+    padding: 20px;
+    text-decoration: underline;
+}
+
+#textodentro{
+    background-color: white;
+    padding-left: 30px;
+}
+
+#Azul{
+    color: blue;
+    font-size: 18px;
+}
+
+#vermelho{
+    color: rgb(255, 0, 162);
+    font-size: 18px;
+}
+
+#Amarelo{
+    color: yellow;
+    font-size: 18px;
+}
+
+#text-align1{
+    text-align: left;
+}
+
+#text-align2{
+    padding-left:25px ;
+}
+
+#text-align3{
+    padding-left:40px ;
+}
+
+#text-align4{
+    text-align: left;
+}
+
+
+#text-decoration1{
+    text-decoration: line-through;
+}
+
+#text-decoration2{
+    text-decoration: underline;
+}
+
+
+#text-transform1{
+    text-transform: capitalize;
+}
+
+#text-transform2{
+    text-transform: uppercase;
+}
+
+#text-indent1{
+    text-indent: 50px;
+}
+
+#text-indent2{
+    text-indent: 100px;
+}
+
+#Line-height1{
+    line-height: 1;
+}
+
+#Line-height2{
+    line-height: 2.0;
+}
+
+#Line-height3{
+    line-height: 2.5;
+}
+
+
+.parte2{
+    background-color: rgb(110, 199, 240);
+    text-align: left; 
+}
+
+#Parte2{
+    background-color: rgb(110, 199, 240);
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+#subtitulo2{
+    background-color: rgb(110, 199, 240);
+    text-align: left;
+    padding: 20px;
+    text-decoration: underline;
+}
+
+#font-family1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#font-family2{
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+#font-family3{
+    font-family: "Courier New", Courier, monospace;
+}
+
+#font-family4{
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+#font-family5{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#font-style1{
+    font-style: italic;
+}
+
+#font-weight1{
+    font-weight: bold;
+}
+
+#font-size1{
+    font-size: 20px;
+}
+
+#font-size2{
+    font-size: 30px;
+}
+
+#font-size3{
+    font-size: 40px;
+}
+
+#font-size4{
+    font-size: 50px;
+}

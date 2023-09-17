@@ -1,0 +1,39 @@
+body{
+    background-color: rgba(97, 214, 214, 0.295);
+}
+
+
+table, td{
+    border: solid 1px black;
+}
+
+td{
+    width: 200px;
+    padding: 30px 60px;
+    text-align: center;
+    color: black;
+}
+
+#segunda_tabela td{ 
+    width: 50px;
+    padding: 10px 40px;
+    text-align: center;
+    color: black;
+}
+
+
+.verde{
+    background-color: green;
+}
+
+.vermelho{
+    background-color: red;
+}
+
+.azul{
+    background-color: blue;
+}
+
+.amarelo{
+    background-color: yellow;
+}
