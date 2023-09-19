@@ -1,0 +1,30 @@
+.secation1{
+    font-size: 2vw;
+    border: 1vh;
+    border-style: solid;
+    width: 65%;
+    margin: 1%;
+    background-color: whitesmoke;
+}
+
+body{
+    background-color: lightblue;
+}
+
+.secation1 h2{
+    text-align: center;
+}
+
+
+
+.secation2{
+    font-size: 14pt;
+    border: 6px solid;
+    width: 620px;
+    margin: 1%;
+    background-color: whitesmoke;
+}
+
+.secation2 h2{
+    text-align: center;
+}

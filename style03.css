@@ -1,0 +1,17 @@
+.texto{
+    background-color: rgb(135, 208, 221);
+    border-right: 1.5vw solid rgb(230, 126, 126);
+    border-bottom: 0.5vw solid rgb(230, 126, 126);
+    font-size: 2vh
+;}
+
+
+.imagem{
+    margin: 1%;
+    border: 1.5vh dotted rgb(127, 29, 219);
+}
+
+#img{
+    border:3.5vh double rgb(219, 29, 203) ;
+    width: 35%;
+}

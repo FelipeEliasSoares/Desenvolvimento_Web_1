@@ -1,0 +1,52 @@
+.secation1{
+    background-color: rgb(119, 233, 119);
+    border-top: 1vw solid blue;
+    border-bottom: 1vw solid blue;
+    margin: 2%;
+    font-family: 'Lobster', cursive;
+    font-size: 2vw;
+    padding: 2%;
+}
+
+#img1{
+    width: 10%;
+}
+
+#img2{
+    width: 20%;
+}
+
+#img3{
+    width: 30%;
+}
+
+#img4{
+    width: 35%;
+}
+
+.secation2{
+    background-color: rgb(233, 127, 119);
+    border-top: 1vw solid blue;
+    border-bottom: 1vw solid blue;
+    margin: 2%;
+    font-family: 'Lobster', cursive;
+    font-size: 2vw;
+    padding: 2%;
+    text-align: right;
+}
+
+#img42{
+    width: 10%;
+}
+
+#img32{
+    width: 20%;
+}
+
+#img22{
+    width: 30%;
+}
+
+#img12{
+    width: 35%;
+}
