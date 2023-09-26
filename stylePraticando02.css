@@ -1,0 +1,40 @@
+body{
+    margin: 2vh;
+    line-height: 2vh;
+}
+
+.caixa{
+    background-color: green;
+    float: right;
+    width: 10vw;
+    height: 10vw;
+    margin: 3vh;
+}
+
+
+
+.caixa2{
+    clear: right;
+    background-color: green;
+    float: left;
+    width: 25vw;
+    height: 10vw;
+    margin: 2vh;
+}
+
+.caixa3-left{
+    clear: left;
+    background-color: green;
+    float: left;
+    width: 10vw;
+    height: 25vw;
+    margin: 2vh;
+}
+
+.caixa3{
+    background-color: green;
+    float: right;
+    width: 10vw;
+    height: 25vw;
+    margin: 2vh;
+}

@@ -1,0 +1,27 @@
+.Conteudo{
+    margin: 3vw;
+    line-height: 15pt;
+}
+
+
+#img1{
+    float: right;
+    width: 250px;
+    height: 30%;
+}
+
+#img2{
+    float: left;
+    width: 250px;
+    height: 30%;
+}
+
+#img3{
+    float: right;
+    width: 250px;
+    height: 30%;
+}
+
+#clear{
+    clear: left;
+}
