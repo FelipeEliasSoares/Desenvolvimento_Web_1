@@ -1,0 +1,51 @@
+body{
+    font-family: 'Playpen Sans', cursive;
+    background-image: url(32b877ed4aa7778cc7d43ebb7d95a6f1.png);
+    background-repeat: no-repeat;
+}
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    line-height: 2vw;
+    font-size: 1vw;
+}
+
+.filmes2{
+    display: flex;
+    flex-direction: column;
+    align-items:  last baseline;
+}
+
+.language-group {
+            display: flex;
+            align-items: center;
+}
+
+.language-group label {
+    margin-right: 10px;
+}
+
+
+#Enviar{
+    padding: 3%;
+    font-style: bold;
+    margin: 1%;
+    margin-right: 2%;
+    font-family: 'Playpen Sans', cursive;
+    border-radius: 10px;
+}
+
+#Limpar{
+    padding: 3%;
+    font-style: bold;
+    margin: 1%;
+    border-radius: 10px;
+    margin-right: 2%;
+    font-family: 'Playpen Sans', cursive;
+}
