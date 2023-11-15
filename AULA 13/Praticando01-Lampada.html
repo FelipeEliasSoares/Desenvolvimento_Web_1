@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Praticando01-Lampada</title>
+    <style>
+        .Lampada{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 10vh;
+        }
+
+        h2{
+            font-size: 3em;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>Praticando 01-Lampada</h2>
+
+    <div class="Lampada">
+        <img src="lampada-acesa.png" alt="lampada-acesa">
+        <h2>Lâmpada Acesa</h2>
+    </div>
+
+
+    <script>
+        let lampada = document.querySelector('img')
+        let h2List = document.querySelectorAll('h2');
+
+
+        lampada.addEventListener('mouseover', function() {
+            document.body.style.backgroundColor = 'black'
+            lampada.src = 'lampada.png'
+
+            h2List.forEach(function(h2) {
+                h2.style.color = 'white';
+                h2.innerHTML = 'Lâmpada Apagada';
+            });
+        })
+
+        lampada.addEventListener('mouseout', function() {
+            document.body.style.backgroundColor = 'white'
+            lampada.src = 'lampada-acesa.png'
+
+            h2List.forEach(function(h2) {
+                h2.style.color = 'black';
+                h2.innerHTML = 'Lâmpada Acesa';
+            });
+        })
+    </script>
+</body>
+</html>
