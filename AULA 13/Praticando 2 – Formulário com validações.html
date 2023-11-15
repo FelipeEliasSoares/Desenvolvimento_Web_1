@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 2 – Formulário com validações</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-6">
+            <label for="validationCustom01" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="validationCustom01" required>
+            <div class="invalid-feedback">
+              Por favor, digite seu nome.
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="validationCustom02" placeholder="seu@email.aqui" required>
+            <div class="invalid-feedback">
+              Por favor, digite um e-mail válido.
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustomUsername" class="form-label">Telefone</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">+55</span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Por favor, digite um número de telefone válido.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom04" class="form-label">Idade</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">[Escolha uma opção]</option>
+              <option value="18-25">18-25</option>
+              <option value="26-35">26-35</option>
+              <option value="36-50">36-50</option>
+              <option value="50+">50+</option>
+            </select>
+            <div class="invalid-feedback">
+              Por favor, selecione uma opção de idade.
+            </div>
+          </div>
+          <div class="col-md-12">
+            <label for="validationCustom03" class="form-label">Observações</label>
+            <textarea class="form-control" id="validationCustom03" rows="3" required></textarea>
+            <div class="invalid-feedback">
+              Por favor, forneça observações.
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Concordo com os termos e condições
+              </label>
+              <div class="invalid-feedback">
+                Você deve concordar antes de enviar.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Enviar </button>
+            <button class="btn btn-warning" type="reset">Limpar</button>
+          </div>
+        </form>
+      </div>
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+      <!-- Adicione um script personalizado para validações -->
+      <script>
+        // Exemplo de validação usando JavaScript
+        (() => {
+          'use strict'
+    
+          // Selecione todos os formulários para aplicar estilos de validação Bootstrap personalizados
+          const forms = document.querySelectorAll('.needs-validation')
+    
+          // Iterar sobre eles e evitar a submissão
+          Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+    
+              form.classList.add('was-validated')
+            }, false)
+          })
+        })()
+      </script>
+</body>
+</html>
