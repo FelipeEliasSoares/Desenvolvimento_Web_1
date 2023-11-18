@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 4- Mini-game Jquery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="Praticando04.js"></script>
+    <style>
+        h2, h4 {
+            text-align: left;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        h4 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        .caixas {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 40px;
+        }
+
+        #img{
+            display: block;
+            margin: 0 auto;
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            margin: 0 10px;
+        }
+
+        .selected {
+            transform: scale(1.2);
+            border-color: yellow;
+            z-index: 1;
+        }
+
+        #modal-background {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #modal {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        #warning {
+            display: none;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .instruções{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .instruções span{
+            font-size: 25px;
+            font-weight: bold;
+            background-color: yellow;
+        }
+
+        .square:nth-child(1) {
+            background-color: #FF6B6B;
+        }
+
+        .square:nth-child(2) {
+            background-color: #6BFFA5;
+        }
+
+        .square:nth-child(3) {
+            background-color: #6B6BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Praticando 4- Mini-game Jquery</h2>
+        <h4>Instruções</h4>
+        <ul>    
+            <ol><p class="instruções">1. Clique em um dos quadrado colorios</p></ol>
+            <ol><p class="instruções">2. Depois use as teclas <span id="Setas">W A S D</span> movimentar os elementos para cima,esquerda, baixo e direita respectivamente</p></ol>
+        </ul>
+        <img id="img" src="wasd.jpg" alt="controles">
+        <div class="caixas">
+            <div class="square" id="square1"></div>
+            <div class="square" id="square2"></div>
+            <div class="square" id="square3"></div>
+        </div>
+    </div>
+
+
+    <div id="modal-background">
+        <div id="modal">
+            <h3>Instruções:</h3>
+            <p>Use as teclas 'W', 'A', 'S', 'D' ou as setas direcionais para mover o quadrado selecionado.</p>
+            <button id="fecharModalBtn">Fechar</button>
+        </div>
+    </div>
+
+    <div id="warning">Selecione outro quadrado.</div>
+
+    
+</body>
+</html>
