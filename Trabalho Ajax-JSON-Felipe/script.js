@@ -39,8 +39,7 @@ function excluirRegistro(id) {
         $.ajax({
             url: url,
             type: 'POST',
-            contentType: 'application/json',
-            data: JSON.stringify(dados),
+            data: dados, 
             success: function(response) {
                 atualizarTabela();
             },
@@ -59,6 +58,11 @@ function enviarForm(event) {
 
     var nome = $("#Nome").val();
     var email = $("#Email").val();
+
+    if (nome.trim() === '' || email.trim() === '') {
+        alert('Por favor, preencha todos os campos!');
+        return;
+    }
 
     const url = 'https://epansani.com.br/2023/dw1s4/ajax/ins.php';
 
